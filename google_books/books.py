@@ -1,16 +1,20 @@
 import requests
-
 import json
 
-result =requests.get("https://www.googleapis.com/books/v1/volumes?q=harry+potter") 
+result = requests.get("https://www.googleapis.com/books/v1/volumes?q=sinsajo")
 
+book = result.json()
 
+items = book["items"]
 
-print(result.text)
+encoded = json.dumps(items)
+decoded = json.loads(encoded)
 
-books= result.json()
+print(decoded[0]["volumeInfo"]["authors"])
+autor=str(decoded[0]["volumeInfo"]["authors"])
+print(autor)
+autor.replace("[","")
+autor.replace("]","")
+print(decoded[0]["volumeInfo"]["imageLinks"]["smallThumbnail"])
 
-
-items = books["items"]
-
-print(items)
+print (result.text)
