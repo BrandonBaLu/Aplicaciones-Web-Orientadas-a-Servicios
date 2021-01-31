@@ -10,7 +10,7 @@ $def with(datos)
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
 
-  <body style="background-color:orange;">
+  <body style="background-color:lightgreen;">
 
     <form method="POST">
       <body style="background-color:#deeaee;">
@@ -21,9 +21,9 @@ $def with(datos)
         <br>
         <input type="text" class="form-control" placeholder="Nombre del libro" name="libro" required>
         <br>
-        <button class="btn btn-outline-primary" type="submit">BUSCAR</button>
+        <button type="submit" class="btn btn-secondary">Buscar</button>
       </div>
-      </form>
+    </form>
       <div align="center">
         $if datos !=None:
         $:datos["libro"]<br>
@@ -32,6 +32,6 @@ $def with(datos)
         $:datos["url"]<br>
       
       </div>
-      
+    
   </body>
 </html>
