@@ -10,27 +10,28 @@ $def with(datos)
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
 
-<body>
-	<form method="POST">
-    <body style="background-color:#deeaee;">
-		<div align="center">
-      <h1>Buscando Tu libro ideal</h1>
-      <br>
-      <label><h3>Ingresa el nombre del libro<h3></label>
-      <br>
-      <input type="text" class="form-control" placeholder="Nombre del libro" name="libro" required>
-      <br>
-      <button class="btn btn-outline-primary" type="submit">BUSCAR</button>
-		</div>
-    </form>
-    <div align="center">
-      $if datos !=None:
-      $:datos["libro"]<br>
-      $:datos["imagen"]<br>
-      $:datos["autor"]<br>
-      $:datos["url"]<br>
-    
-    </div>
-    
+  <body style="background-color:orange;">
+
+    <form method="POST">
+      <body style="background-color:#deeaee;">
+      <div align="center">
+        <h1>Buscando Tu libro ideal</h1>
+        <br>
+        <label><h3>Ingresa el nombre del libro<h3></label>
+        <br>
+        <input type="text" class="form-control" placeholder="Nombre del libro" name="libro" required>
+        <br>
+        <button class="btn btn-outline-primary" type="submit">BUSCAR</button>
+      </div>
+      </form>
+      <div align="center">
+        $if datos !=None:
+        $:datos["libro"]<br>
+        $:datos["imagen"]<br>
+        $:datos["autor"]<br>
+        $:datos["url"]<br>
+      
+      </div>
+      
   </body>
 </html>

@@ -23,7 +23,9 @@ class Index():
     decoded = json.loads(encoded)
 
     url = decoded[0]["volumeInfo"]["infoLink"]
+
     url_imagen=decoded[0]["volumeInfo"]["imageLinks"]["smallThumbnail"]
+    
     nombre_autor=str(decoded[0]["volumeInfo"]["authors"])
     link ="<a target='blank' href='"+url+"'>"+libro+"</a>"
     
