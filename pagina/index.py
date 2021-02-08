@@ -22,7 +22,7 @@ class Index():
     encoded = json.dumps(items)
     decoded = json.loads(encoded)
 
-    paises=decoded[0]["name"]
+    paises=str(decoded[0]["name"])
     capital_1=str(decoded[0]["capital"])
     region_1=str(decoded[0]["region"])
     population_1=str(decoded[0]["population"])
@@ -30,7 +30,7 @@ class Index():
     idioma_1=str(decoded[0]["languages"][0])
     imagen_1=decoded[0]["flag"]
     
-    paises="<label>'"+paises+"'</label>"
+    pais="<label>'"+paises+"'</label>"
     capital="<label>'"+capital_1+"'</label>"
     region="<label>'"+region_1+"'</label>"
     population="<label>'"+population_1+"'</label>"
@@ -40,7 +40,7 @@ class Index():
     
 
     datos={
-      "países":"Nombre del país: "+paises,
+      "países":"Nombre del país: "+pais,
       "capital":"capital: "+capital,
       "region": "Region: "+region,
       "population": "Population: "+population,
