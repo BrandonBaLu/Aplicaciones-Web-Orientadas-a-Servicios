@@ -1,6 +1,6 @@
 import web
 
-urls= ("/","web.index.Index")
+urls= ("/","pagina.index.Index")
 
 app = web.application(urls, globals())
 

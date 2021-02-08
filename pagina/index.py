@@ -2,7 +2,7 @@ import web
 import requests
 import json
 
-render= web.template.render("web/")
+render= web.template.render("pagina/")
 
 class Index():
   def GET(self):
