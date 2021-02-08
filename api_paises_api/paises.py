@@ -1,7 +1,7 @@
 import requests
 import json
 
-result = requests.get("https://restcountries.eu/rest/v2/all")
+result = requests.get("https://restcountries.eu/rest/v2/name/mexico")
 
 #print(result)
 #print(result.text)
@@ -25,7 +25,7 @@ population=str(decoded[0]["population"])
 print(population)
 cordenadas=str(decoded[0]["latlng"])
 print(cordenadas)
-idioma=str(decoded[0]["languages"][0])
+idioma=str(decoded[0]["languages"])
 print(idioma)
 imagen=str(decoded[0]["flag"])
 print(imagen)
