@@ -18,4 +18,4 @@ autor.replace("]","")
 print(decoded[0]["volumeInfo"]["imageLinks"]["smallThumbnail"])
 
 print (result.text)
-pockemon = result.json()
+

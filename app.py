@@ -1,6 +1,6 @@
 import web
 
-urls= ("/","mvc.index.Index")
+urls= ("/","web.index.Index")
 
 app = web.application(urls, globals())
 
