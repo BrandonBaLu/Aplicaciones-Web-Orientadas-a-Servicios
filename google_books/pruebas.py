@@ -15,3 +15,8 @@ print(items[0].keys())
 
 
 encoded = json.dump
+
+
+
+
+print(pockemon)
