@@ -13,19 +13,19 @@ $def with(datos)
   <body style="background-color:lightgreen;">
 
     <form method="POST">
-      <body style="background-color:#deeaee;">
       <div align="center">
         <h1>Busca tu país</h1>
         <br>
         <label><h3>Ingresa el nombre país<h3></label>
         <br>
-        <input type="text" class="form-control" placeholder="Nombre del país" name="pais"required>
+        <input type="text" class="form-control" placeholder="Nombre del país" name="paises"required>
         <br>
         <button type="submit" class="btn btn-secondary">Buscar</button>
       </div>
     </form>
       <div align="center">
         $if datos !=None:
+        $:datos["paises"]<br>
         $:datos["capital"]<br>
         $:datos["region"]<br>
         $:datos["population"]<br>
