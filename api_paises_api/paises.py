@@ -9,7 +9,6 @@ pais = result.json()
 
 items = pais
 
-
 encoded = json.dumps(items)
 decoded = json.loads(encoded)
 
