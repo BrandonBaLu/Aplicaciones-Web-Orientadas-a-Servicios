@@ -15,7 +15,7 @@ class Carta():
       print(fech_dia, fech_mes)
       
       
-      if fech_dia >= 21 or fech_dia <= 19 and fech_mes == 1 or fech_mes == 2:
+      if fech_dia >= 21 and fech_mes == 1 or fech_mes == 2 and fech_dia <= 19:
         horoscopo = {}
         horoscopo["Nombre"] = "Acuario"
         horoscopo["Fecha"] = "Enero  21 – Febrero 19"
@@ -24,9 +24,9 @@ class Carta():
         horoscopo["Color"] = "Gris, azul y verde"
         horoscopo["Horóscopo del día"] = "Estarás inexplicablemente tenso, pese a las mil y una bondades que te reserva la jornada. No olvides que todo pasa."
         result= json.dumps(horoscopo)
-        return resultt
+        return result
          
-      elif fech_dia >= 20 or fech_dia <= 20 and fech_mes == 2 or fech_mes == 3:
+      elif fech_dia >= 20  and fech_mes == 2 or fech_mes == 3 and fech_dia <= 20:
         horoscopo = {}
         horoscopo["Nombre"] = "Picis"
         horoscopo["Fecha"] = "Febrero  20 – Marzo 20"
@@ -35,9 +35,9 @@ class Carta():
         horoscopo["Color"] = "Verde, azul y morado."
         horoscopo["Horóscopo del día"] = "Escucha una propuesta que rompe con tus prejuicios. Un elogio llega desde el lugar menos esperado. No lo descartes."
         result= json.dumps(horoscopo)
-        return resultt
+        return result
 
-      elif fech_dia >= 21 or fech_dia <= 19 and fech_mes == 3 or fech_mes == 4:
+      elif fech_dia >= 21  and fech_mes == 3 or fech_mes == 4 and  fech_dia <= 19:
         horoscopo = {}
         horoscopo["Nombre"] = "Aries"
         horoscopo["Fecha"] = "Marzo  21 – Abril 19"
@@ -46,7 +46,7 @@ class Carta():
         horoscopo["Color"] = "Gris, azul y verde"
         horoscopo["Horóscopo del día"] = "Contarás con una energía potenciada para encarar los cambios que tanto deseas. Te adaptarás a los tiempos que se avecinan."
 
-      elif fech_dia >= 20 or fech_dia <= 20 and fech_mes == 4 or fech_mes == 5:
+      elif fech_dia >= 20  and fech_mes == 4 or fech_mes == 5 and fech_dia <= 20:
         horoscopo = {}
         horoscopo["Nombre"] = "Tauro"
         horoscopo["Fecha"] = "Abril  20 – Mayo 20"
@@ -57,7 +57,7 @@ class Carta():
         result= json.dumps(horoscopo)
         return result
 
-      elif fech_dia >= 21 or fech_dia <= 21 and fech_mes == 5 or fech_mes == 6:
+      elif fech_dia >= 21  and fech_mes == 5 or fech_mes == 6 and fech_dia <= 21:
         horoscopo = {}
         horoscopo["Nombre"] = "Géminis"
         horoscopo["Fecha"] = "Mayo  21 – Junio 21"
@@ -68,7 +68,7 @@ class Carta():
         result= json.dumps(horoscopo)
         return result
 
-      elif fech_dia >= 20 or fech_dia <= 20 and fech_mes == 6 or fech_mes == 7:
+      elif fech_dia >= 20  and fech_mes == 6 or fech_mes == 7 and fech_dia <= 20:
         horoscopo = {}
         horoscopo["Nombre"] = "Cáncer"
         horoscopo["Fecha"] = "Junio  20 – Julio 20"
@@ -79,7 +79,7 @@ class Carta():
         result= json.dumps(horoscopo)
         return result
 
-      elif fech_dia >= 22 or fech_dia <= 22 and fech_mes == 7 or fech_mes == 8:
+      elif fech_dia >= 22  and fech_mes == 7 or fech_mes == 8 and fech_dia <= 22:
         horoscopo = {}
         horoscopo["Nombre"] = "Leo"
         horoscopo["Fecha"] = "Julio  22 – Agosto 22"
@@ -90,7 +90,7 @@ class Carta():
         result= json.dumps(horoscopo)
         return result
 
-      elif fech_dia >= 23 or fech_dia <= 22 and fech_mes == 8 or fech_mes == 9:
+      elif fech_dia >= 23  and fech_mes == 8 or fech_mes == 9 and fech_dia <= 22:
         horoscopo = {}
         horoscopo["Nombre"] = "Virgo"
         horoscopo["Fecha"] = "Agosto  23 – Septiembre 22"
@@ -101,7 +101,7 @@ class Carta():
         result= json.dumps(horoscopo)
         return result
 
-      elif fech_dia >= 23 or fech_dia <= 2 and fech_mes == 9 or fech_mes == 10:
+      elif fech_dia >= 23  and fech_mes == 9 or fech_mes == 10 and fech_dia <= 22:
         horoscopo = {}
         horoscopo["Nombre"] = "Libra"
         horoscopo["Fecha"] = "Septiembre  23 – Octubre 22"
@@ -113,7 +113,7 @@ class Carta():
         return result
 
 
-      elif fech_dia >= 23 or fech_dia <= 21 and fech_mes == 10 or fech_mes == 11:
+      elif fech_dia >= 23 and fech_mes == 10 or fech_mes == 11 and fech_dia <= 21:
         horoscopo = {}
         horoscopo["Nombre"] = "Escorpio"
         horoscopo["Fecha"] = "Octubre  23 – Noviembre 21"
@@ -124,7 +124,7 @@ class Carta():
         result= json.dumps(horoscopo)
         return result
 
-      elif fech_dia >= 22 or fech_dia <= 21 and fech_mes == 11 or fech_mes == 12:
+      elif fech_dia >= 22  and fech_mes == 11 or fech_mes == 12 and  fech_dia <= 21:
         horoscopo = {}
         horoscopo["Nombre"] = "Sagitario"
         horoscopo["Fecha"] = "Noviembre  20 – Diciembre 20"
@@ -146,13 +146,13 @@ class Carta():
         result= json.dumps(horoscopo)
         return result
     except:
+      
       horoscopo = {}
-			horoscopo["Dato"] = "El dato: " + str(carta_astral)
-			horoscopo["Error"] = "Valor incorrecto"
-			horoscopo[
-			    "Solucion"] = "Ingresa la fecha de tu nacimiento formato DD/MM/AAAA"
-			result= json.dumps(horoscopo)
-			return resultt
+      horoscopo["Fecha"] = "La fecha  " + str(carta_astral)
+      horoscopo["Error"] = "Valor incorrecto"
+      horoscopo["Solucion"] = "Ingresa la fecha de tu nacimiento formato DD/MM/AAAA"
+      result= json.dumps(horoscopo)
+      return result
 
 
 if __name__ == "__main__":
