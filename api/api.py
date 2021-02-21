@@ -13,8 +13,8 @@ app = web.application(urls, globals())
 class Carta():
   def __init__(self):
     pass
- 
-  
+    
+    
   def GET(self, carta_astral):
     try:
       fech_dia = int(carta_astral[0:2])
@@ -166,5 +166,3 @@ class Carta():
 
 if __name__ == "__main__":
 	app.run()
-
-
