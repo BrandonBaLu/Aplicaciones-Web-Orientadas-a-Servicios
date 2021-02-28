@@ -24,7 +24,7 @@ class Personas:
             data["Nombre"] = nombre
             data["Día"] = dia
             data["Mes"] = mes
-            data["Ano de nacimiento"] = año_nac
+            data["Año de nacimiento"] = año_nac
             data["Edad"] = edad
             archivo = open("static/personas_edades.txt","a")
             archivo.write("\n")
